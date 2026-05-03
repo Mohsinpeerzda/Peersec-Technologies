@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peersec Technologies</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #0a1f33, #020c18);
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 22px;
+    color: #4cc9f0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4cc9f0;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.hero span {
+    color: #4cc9f0;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.btn {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(90deg, #0f62fe, #4cc9f0);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SERVICES */
+.section {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #4cc9f0;
+    margin-bottom: 15px;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(90deg, #0f62fe, #4cc9f0);
+    padding: 80px 20px;
+}
+
+/* FOOTER */
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #020c18;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PEERSEC</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Protect Your Website from <span>Cyber Attacks</span></h1>
+        <p>WAF Protection • Secure Hosting • Vulnerability Management</p>
+        <a href="#" class="btn">Get Free Security Audit</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>WAF Protection</h3>
+            <p>Block SQL injection, XSS, bots, and DDoS attacks.</p>
+        </div>
+
+        <div class="card">
+            <h3>Secure Hosting</h3>
+            <p>Fast, scalable infrastructure with built-in security.</p>
+        </div>
+
+        <div class="card">
+            <h3>Maintenance</h3>
+            <p>24/7 monitoring, updates, and vulnerability patching.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Why Choose Us</h2>
+    <p>Proactive security • Real-time monitoring • Expert engineers</p>
+</section>
+
+<section class="cta">
+    <h2>Get Your Free Security Audit Today</h2>
+    <a href="#" class="btn">Request Audit</a>
+</section>
+
+<footer>
+    <p>© 2026 Peersec Technologies</p>
+</footer>
+
+</body>
+</html>
